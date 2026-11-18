@@ -2,32 +2,29 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- JUDUL SUDAH DIGANTI -->
+    <!-- INI KUNCI BIAR UKURANNYA PAS DI HP (Nggak kecil) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     <title>Link Bio Mekinjir</title>
     
-    <!-- ========================================== -->
-    <!-- FAVICON (ICON BIAR NGGAK BUMI) -->
-    <!-- ========================================== -->
+    <!-- FAVICON (Sesuai nama file asli lu di GitHub) -->
     <link rel="icon" type="image/png" href="pp.png">
     <link rel="shortcut icon" type="image/png" href="pp.png">
     <link rel="apple-touch-icon" href="pp.png">
     <meta name="msapplication-TileImage" content="pp.png">
 
-    <!-- ========================================== -->
-    <!-- PREVIEW SHARE (WHATSAPP, DISCORD, DLL) -->
-    <!-- ========================================== -->
+    <!-- PREVIEW SHARE (Link raw GitHub lu yang bener) -->
     <meta property="og:title" content="Link Bio Mekinjir">
     <meta property="og:description" content="Kunjungi link-link sosial media dan tools dari Mekinjir di sini!">
-    <meta property="og:image" content="pp.png"> 
-    <meta property="og:url" content="https://mekinjir.my.id/"> <!-- Pastikan sesuai domainmu -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/mekinjir/bio-link/main/pp.png"> 
+    <meta property="og:url" content="https://mekinjir.github.io/bio-link/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Link Bio Mekinjir">
     <meta name="twitter:description" content="Kunjungi link-link sosial media dan tools dari Mekinjir di sini!">
-    <meta name="twitter:image" content="pp.png">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/mekinjir/bio-link/main/pp.png">
 
     <!-- FONT & ICON -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -42,12 +39,16 @@
         }
 
         body {
-            /* BACKGROUND MURNI FOTO MEKI.PNG */
+            /* Background warna dasar gelap kalau gambar telat load */
+            background-color: #0a0b10; 
+            
+            /* PAKAI HURUF KECIL SEMUA SESUAI DI GITHUB */
             background-image: url('meki.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -58,7 +59,7 @@
 
         .container {
             width: 100%;
-            max-width: 450px;
+            max-width: 400px; /* Ukuran maksimal biar pas di HP */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -69,6 +70,7 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 25px;
+            width: 100%;
         }
 
         .profile-pic {
@@ -79,6 +81,7 @@
             border: 2px solid #fff;
             box-shadow: 0 0 20px rgba(170, 0, 255, 0.6);
             margin-bottom: 15px;
+            background-color: #333;
         }
 
         .username {
@@ -171,7 +174,6 @@
             margin-left: 10px;
         }
 
-        /* FOOTER NGAMBANG */
         .footer {
             position: fixed;
             bottom: 20px;
@@ -196,6 +198,7 @@
     <div class="container">
         <!-- PROFIL -->
         <div class="profile-section">
+            <!-- PAKAI HURUF KECIL -->
             <img src="pp.png" alt="Mekinjir PP" class="profile-pic">
             <h1 class="username">mekinjir</h1>
             
@@ -211,9 +214,9 @@
             
             <!-- LINK SOSIALBUZ -->
             <a href="MASUKKAN_LINK_SOSIALBUZ_DISINI" target="_blank" class="link-item">
-                <div class="link-icon">
-                    <!-- Pastikan file gambar logo ada di folder yang sama -->
-                    <img src="sosialbuz.png" alt="SosialBuz">
+                <div class="link-icon" style="background-color: #1DA1F2; border-radius: 8px;">
+                    <!-- SEMENTARA PAKAI ICON BAWAAN DULU -->
+                    <i class="fa-solid fa-link" style="color:white; font-size:20px;"></i>
                 </div>
                 <span class="link-text">SOSIALBUZ</span>
                 <i class="fa-solid fa-chevron-right link-arrow"></i>
