@@ -13,7 +13,7 @@ const configData = {
     links: [
         {
             title: "SOSIALBUZ",
-            url: "MASUKKAN_LINK_SOSIALBUZ_DISINI",
+            url: "https://sociabuzz.com/meki_real/tribe",
             iconImage: "sosialbuz.png", 
             iconFallback: "fa-solid fa-link",
             iconBgColor: "#1DA1F2"
