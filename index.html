@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- JUDUL SUDAH DIGANTI -->
+    <title>Link Bio Mekinjir</title>
+    
+    <!-- ========================================== -->
+    <!-- FAVICON (ICON BIAR NGGAK BUMI) -->
+    <!-- ========================================== -->
+    <link rel="icon" type="image/png" href="pp.png">
+    <link rel="shortcut icon" type="image/png" href="pp.png">
+    <link rel="apple-touch-icon" href="pp.png">
+    <meta name="msapplication-TileImage" content="pp.png">
+
+    <!-- ========================================== -->
+    <!-- PREVIEW SHARE (WHATSAPP, DISCORD, DLL) -->
+    <!-- ========================================== -->
+    <meta property="og:title" content="Link Bio Mekinjir">
+    <meta property="og:description" content="Kunjungi link-link sosial media dan tools dari Mekinjir di sini!">
+    <meta property="og:image" content="pp.png"> 
+    <meta property="og:url" content="https://mekinjir.my.id/"> <!-- Pastikan sesuai domainmu -->
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Link Bio Mekinjir">
+    <meta name="twitter:description" content="Kunjungi link-link sosial media dan tools dari Mekinjir di sini!">
+    <meta name="twitter:image" content="pp.png">
+
+    <!-- FONT & ICON -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* BACKGROUND MURNI FOTO MEKI.PNG */
+            background-image: url('meki.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px 80px 20px;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 20px rgba(170, 0, 255, 0.6);
+            margin-bottom: 15px;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8); 
+        }
+
+        .social-top {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .social-top a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .social-top a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .link-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+        }
+
+        .link-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            overflow: hidden;
+            background-color: transparent; 
+        }
+
+        .link-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+        }
+
+        .link-text {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .link-arrow {
+            color: #b0b0b0;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        /* FOOTER NGAMBANG */
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            z-index: 10;
+            pointer-events: none;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+        }
+        
+        .footer span {
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- PROFIL -->
+        <div class="profile-section">
+            <img src="pp.png" alt="Mekinjir PP" class="profile-pic">
+            <h1 class="username">mekinjir</h1>
+            
+            <div class="social-top">
+                <a href="https://www.tiktok.com/@mekinjir" target="_blank" title="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- LIST LINK -->
+        <div class="links-list">
+            
+            <!-- LINK SOSIALBUZ -->
+            <a href="MASUKKAN_LINK_SOSIALBUZ_DISINI" target="_blank" class="link-item">
+                <div class="link-icon">
+                    <!-- Pastikan file gambar logo ada di folder yang sama -->
+                    <img src="sosialbuz.png" alt="SosialBuz">
+                </div>
+                <span class="link-text">SOSIALBUZ</span>
+                <i class="fa-solid fa-chevron-right link-arrow"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <span>&lt;/&gt;</span> by mekinjir
+    </div>
+
+</body>
+</html>
