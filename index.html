@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     
-    <!-- INI KUNCI BIAR UKURANNYA PAS DI HP (Nggak kecil) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>Link Bio Mekinjir</title>
     
-    <!-- FAVICON (Sesuai nama file asli lu di GitHub) -->
     <link rel="icon" type="image/png" href="pp.png">
     <link rel="shortcut icon" type="image/png" href="pp.png">
     <link rel="apple-touch-icon" href="pp.png">
     <meta name="msapplication-TileImage" content="pp.png">
 
-    <!-- PREVIEW SHARE (Link raw GitHub lu yang bener) -->
     <meta property="og:title" content="Link Bio Mekinjir">
     <meta property="og:description" content="Kunjungi link-link sosial media dan tools dari Mekinjir di sini!">
     <meta property="og:image" content="https://raw.githubusercontent.com/mekinjir/bio-link/main/pp.png"> 
@@ -26,7 +23,6 @@
     <meta name="twitter:description" content="Kunjungi link-link sosial media dan tools dari Mekinjir di sini!">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/mekinjir/bio-link/main/pp.png">
 
-    <!-- FONT & ICON -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -39,11 +35,13 @@
         }
 
         body {
-            /* Background warna dasar gelap kalau gambar telat load */
             background-color: #0a0b10; 
             
-            /* PAKAI HURUF KECIL SEMUA SESUAI DI GITHUB */
-            background-image: url('meki.png');
+            /* 👇 INI BAGIAN YANG GUE UBAH 👇 */
+            /* Pake link Raw GitHub langsung + tambahan ?v=1 biar cache hilang */
+            background-image: url('https://raw.githubusercontent.com/mekinjir/bio-link/main/meki.png?v=1');
+            /* 👆 ============================= 👆 */
+            
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -59,7 +57,7 @@
 
         .container {
             width: 100%;
-            max-width: 400px; /* Ukuran maksimal biar pas di HP */
+            max-width: 400px; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -196,9 +194,7 @@
 <body>
 
     <div class="container">
-        <!-- PROFIL -->
         <div class="profile-section">
-            <!-- PAKAI HURUF KECIL -->
             <img src="pp.png" alt="Mekinjir PP" class="profile-pic">
             <h1 class="username">mekinjir</h1>
             
@@ -209,13 +205,10 @@
             </div>
         </div>
 
-        <!-- LIST LINK -->
         <div class="links-list">
             
-            <!-- LINK SOSIALBUZ -->
             <a href="MASUKKAN_LINK_SOSIALBUZ_DISINI" target="_blank" class="link-item">
                 <div class="link-icon" style="background-color: #1DA1F2; border-radius: 8px;">
-                    <!-- SEMENTARA PAKAI ICON BAWAAN DULU -->
                     <i class="fa-solid fa-link" style="color:white; font-size:20px;"></i>
                 </div>
                 <span class="link-text">SOSIALBUZ</span>
@@ -225,7 +218,6 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
     <div class="footer">
         <span>&lt;/&gt;</span> by mekinjir
     </div>
